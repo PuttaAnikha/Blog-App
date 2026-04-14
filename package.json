@@ -1,0 +1,13 @@
+{
+  "name": "blog-app-root",
+  "version": "1.0.0",
+  "scripts": {
+    "setup": "npm install && npm install --prefix backendOfBlogApp && npm install --prefix frontendofBlogApp",
+    "backend": "npm run dev --prefix backendOfBlogApp",
+    "frontend": "npm run dev --prefix frontendofBlogApp",
+    "clean-node-modules": "powershell -Command \"Remove-Item -Recurse -Force node_modules, backendOfBlogApp/node_modules, frontendofBlogApp/node_modules\""
+  },
+  "dependencies": {
+    "cors": "^2.8.6"
+  }
+}
