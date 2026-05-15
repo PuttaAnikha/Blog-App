@@ -141,7 +141,7 @@ commonApp.post("/login", async (req, res) => {
       sameSite: "lax",
       maxAge: 24 * 60 * 60 * 1000 // 1 day
     });
-
+   // delete password
     let userObj = user.toObject();
     delete userObj.password;
 

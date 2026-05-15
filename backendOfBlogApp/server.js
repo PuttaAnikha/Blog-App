@@ -19,7 +19,7 @@ const app = exp();
 //add cookie parser middeleware
 app.use(cookieParser())
 //add cors middleware
-const allowedOrigins = ["http://localhost:5173", "http://127.0.0.1:5173"];
+const allowedOrigins = ["http://localhost:5173", "http://127.0.0.1:5173","https://blogapp-theta-topaz.vercel.app"];
 app.use(cors({
   origin: (origin, callback) => {
     if (!origin || allowedOrigins.includes(origin)) {
